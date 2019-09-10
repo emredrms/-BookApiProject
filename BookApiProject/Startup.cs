@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BookApiProject.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,6 +25,7 @@ namespace BookApiProject
             services.AddMvc();
 
             var connectionString = Configuration["connectionStrings:bookDbConnectionString"];
+            services.AddDbContext<BookDbContext>(c => c.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BookApiProject;Trusted_Connection=True;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +40,8 @@ namespace BookApiProject
             {
                 await context.Response.WriteAsync("Hello World!");
             });
+
+            //context.SeedDataContext();
 
             app.UseMvc();
             
