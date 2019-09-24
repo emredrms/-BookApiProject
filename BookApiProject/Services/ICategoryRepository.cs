@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace BookApiProject.Services
 {
-    interface ICategoryRepository
+    public interface ICategoryRepository
     {
         ICollection<Category> GetCategories();
         Category GetCategory(int categoryId);

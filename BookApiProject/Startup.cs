@@ -27,6 +27,7 @@ namespace BookApiProject
             var connectionString = Configuration["connectionStrings:bookDbConnectionString"];
             services.AddDbContext<BookDbContext>(c => c.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=BookApiProject;Trusted_Connection=True;"));
             services.AddScoped<ICountryRepository, CountryRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepoitory>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
