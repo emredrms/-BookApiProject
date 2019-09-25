@@ -25,3 +25,4 @@ C:\workspace\net-core\BookApiProject\BookApiProject\obj\Debug\netcoreapp2.1\Book
 C:\workspace\net-core\BookApiProject\BookApiProject\obj\Debug\netcoreapp2.1\BookApiProject.RazorTargetAssemblyInfo.cache
 C:\workspace\net-core\BookApiProject\BookApiProject\obj\Debug\netcoreapp2.1\BookApiProject.dll
 C:\workspace\net-core\BookApiProject\BookApiProject\obj\Debug\netcoreapp2.1\BookApiProject.pdb
+C:\workspace\net-core\BookApiProject\BookApiProject\obj\Debug\netcoreapp2.1\BookApiProject.csprojAssemblyReference.cache
